@@ -34,6 +34,7 @@ public class SnakeLadder {
             if (playerOnePosition > 100)
                 playerOnePosition -= diceRoll;
             System.out.println("Player one Position --> " +playerOnePosition);
+            System.out.println("Die role count --> " +count);
         }while (playerOnePosition < 100);
     }
 }
