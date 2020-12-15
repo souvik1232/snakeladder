@@ -23,7 +23,7 @@ public class SnakeLadderMethod {
             System.out.println("Player 1 turn");
             player1.setPlayerPosition(player1.getPlayerPosition() + roll);
             player1.setDiceCount(player1.getDiceCount()+1);
-            if (player1.getPlayerPosition()>10)
+            if (player1.getPlayerPosition()>100)
                 player1.setPlayerPosition(player1.getPlayerPosition() - roll);
 
         }
@@ -31,15 +31,15 @@ public class SnakeLadderMethod {
             System.out.println("Player 2 turn");
             player2.setPlayerPosition(player2.getPlayerPosition() + roll);
             player2.setDiceCount(player2.getDiceCount()+1);
-            if (player2.getPlayerPosition()>10)
+            if (player2.getPlayerPosition()>100)
                 player2.setPlayerPosition(player2.getPlayerPosition() - roll);
         }
         System.out.println("Position of player one ---> "+player1.getPlayerPosition());
         System.out.println("Position of player two ---> "+player2.getPlayerPosition());
         System.out.println("Dice count ---> "+ (player1.getDiceCount()+player2.getDiceCount()));
-        if (player1.getPlayerPosition()==10)
+        if (player1.getPlayerPosition()==100)
             return 1;
-        else if(player2.getPlayerPosition()==10)
+        else if(player2.getPlayerPosition()==100)
             return 2;
             return 0;
     }
